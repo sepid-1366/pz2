@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="with=device-with, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @font-face {
+        font-family: 'Font Awesome';
+        src: url('./webfonts/fa-brands-400.woff2') format('woff2'), url('./webfonts/fa-light-300.woff2') format('woff2'),
+          url('./webfonts/fa-regular-400.woff2') format('woff2'), url('./webfonts/fa-solid-900.woff2') format('woff2');
+      }
+      .container {
+        padding: 0 15px;
+        max-width: 1200px;
+        /* margin: 0 auto; */
+        margin-left: auto;
+        margin-right: auto;
+      }
+      i {
+        padding: 0 4px;
+      }
+      body {
+        font-family: Roboto;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      }
+      .cantainer1,
+      .but {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25;
+        margin: auto;
+      }
+      .but {
+        position: relative;
+        left: 300px;
+      }
+      .cantainer1 {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: white;
+      }
+      .pro {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        left: 350;
+      }
+      .btn {
+        background-color: white;
+        color: black;
+      }
+      .btn:hover {
+        color: gray;
+      }
+      .sin,
+      .btn2 {
+        background-color: black;
+        color: white;
+      }
+      .sin:hover,
+      .btn2:hover {
+        color: gray;
+      }
+      .make {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .rat1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100;
+      }
+      .dan {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 1000;
+      }
+      .cantainer2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .cantainer21 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 1100;
+      }
+      .cantainer3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .cantainer31 {
+        display: flex;
+        flex-direction: column;
+        width: 700;
+      }
+      .cantainer4 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 50px;
+      }
+      .cantainer41 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 900px;
+      }
+      .cant4 {
+        position: relative;
+        top: 80px;
+      }
+      .aks1,
+      .aks2,
+      .aks3 {
+        padding: 32px;
+        width: 164px;
+        height: 164px;
+        background-color: rgb(207, 207, 206);
+        border-radius: 20px;
+      }
+      .cantainer5 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 64px;
+        padding-top: 64px;
+      }
+      .cantainer5 h2 {
+        font-size: 48px;
+        margin: 0;
+        padding-bottom: 12px;
+        font-weight: 500;
+      }
+      .cantainer6 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .list1,
+      .list2,
+      .list3,
+      .list4,
+      .list5,
+      .list6 {
+        padding: 24px;
+        background-color: rgb(173, 172, 172);
+        width: 33%;
+        height: 190;
+        color: black;
+        border-radius: 24px;
+        margin-bottom: 24px;
+      }
+      .list1:hover,
+      .list2:hover,
+      .list3:hover,
+      .list4:hover,
+      .list5:hover,
+      .list6:hover {
+        background-color: black;
+        color: white;
+      }
+      .list1:hover,
+      .list2:hover,
+      .list3:hover,
+      .list4:hover,
+      .list5:hover,
+      .list6:hover a {
+        color: white;
+      }
+      .list2title {
+        padding-bottom: 16px;
+        font-size: 24px;
+      }
+      .llink {
+        padding: 4px 0;
+        display: block;
+        color: black;
+      }
+      .llink:hover {
+        text-decoration: underline;
+        color: white;
+      }
+
+      .cantainer7 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      .onvan {
+        color: black;
+      }
+      .cantainer8 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 96px;
+      }
+      .cantainer9 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 30%;
+        padding-top: 110;
+        margin: auto;
+      }
+      .darsad {
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-around;
+        text-align: center;
+      }
+      .darsad1,
+      .darsad2,
+      .darsad3 {
+        width: 10%;
+      }
+      .darsad1 {
+        position: relative;
+        left: 250px;
+      }
+      .darsad3 {
+        position: relative;
+        right: 250px;
+      }
+      .cantainer91 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        color: white;
+      }
+      .textp {
+        width: 20%;
+      }
+      .container-fluid {
+        width: 100%;
+      }
+      .top-header-section {
+        background-color: #131313;
+        color: white;
+        text-align: center;
+        font-size: 14px;
+        font-weight: lighter;
+      }
+
+      .top-header-section {
+        text-align: center;
+        background-color: #131313;
+        color: #cccccc;
+        padding: 28px 0px;
+        font-size: clamp(0.875rem, 0.7876rem + 0.2427vw, 1rem);
+      }
+      .top-header-section > div > p > i {
+        padding: 0px 6px;
+        color: #ffffff;
+      }
+      .navi-p {
+        position: sticky;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(20px);
+        top: -1px;
+        /* background-color: aqua; */
+        z-index: 1001;
+        width: 100% !important;
+      }
+      .navi {
+        /* position: sticky; */
+        /* background: rgba(255, 255, 255, 0.75); */
+        /* backdrop-filter: blur(50px); */
+        /* top: -1px; */
+        /* background-color: aqua; */
+        z-index: 1001;
+        width: 100% !important;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 32px 4px;
+        color: #191919;
+      }
+      .nav-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: inherit;
+      }
+      .nav-main-first {
+        color: #191919;
+      }
+      .nav-main-first > a {
+        color: inherit;
+        padding: 0px 10px;
+      }
+      .nav-right a {
+        color: #191919;
+        padding: 12px 12px;
+        border-radius: 10px;
+      }
+      .nav-right .sign {
+        background-color: #191919;
+        color: hsl(0, 0%, 100%);
+      }
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+        .list1,
+        .list2,
+        .list3,
+        .list4,
+        .list5,
+        .list6 {
+          width: 49%;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .list1,
+        .list2,
+        .list3,
+        .list4,
+        .list5,
+        .list6 {
+          width: 100%;
+        }
+      }
+      .cantainera {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: black;
+        color: white;
+      }
+      #payin {
+        background-color: white;
+        border-radius: 5px;
+        padding: 15px;
+        position: relative;
+        top: 30px;
+      }
+      .cantainerb {
+        display: flex;
+        flex-direction: row;
+        background-color: black;
+        color: white;
+        justify-content: space-around;
+        padding-top: 70px;
+      }
+      .sutun {
+        width: 7%;
+      }
+    </style>
+    <title>typefor.com</title>
+  </head>
+  <body>
+    <div class="container-fluid top-header-section">
+      <div>
+        <p>Join us for a live Typeform for Growth demo<i class="fa-solid fa-chart-line-up"></i><u>Save your spot</u></p>
+      </div>
+    </div>
+    <!-- navbar section -->
+    <div class="container-fluid">
+      <div class="navi-p">
+        <div class="container navi">
+          <nav>
+            <div class="navbar">
+              <div class="nav-left">
+                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="22" fill="none">
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M0 5.34C0 1.82 1.39 0 3.72 0c2.34 0 3.73 1.82 3.73 5.34V16c0 3.52-1.4 5.34-3.73 5.34S0 19.52 0 16V5.34ZM25.08 0h-7.7c-6.9 0-7.44 2.98-7.44 6.96l-.01 7.42c0 4.14.52 6.96 7.48 6.96h7.67c6.92 0 7.43-2.97 7.43-6.94V6.97c0-3.99-.53-6.97-7.43-6.97Z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span class="msg"> Typeform</span>
+              </div>
+              <div class="nav-main-first">
+                <a href="#">Products <i class="ri-arrow-down-s-line"></i></i></a>
+                <a href="#">Solutions <i class="ri-arrow-down-s-line"></i></i></a>
+                <a href="#">Templates <i class="ri-arrow-down-s-line"></i></i></a>
+                <a href="#">Integrations <i class="ri-arrow-down-s-line"></i></i></a>
+                <a href="#">Resources <i class="ri-arrow-down-s-line"></i></i></a>
+                <a href="#">Pricing</a>
+              </div>
+              <div class="nav-right">
+                <a href="#" class="log">Log in</a>
+                <a href="#" class="sign">Sign up</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- end navbar section   -->
+      <div class="make">
+        <div>
+          <video src="/vidseo/1.webm" controls autoplay muted loop></video>
+        </div>
+        <div>
+          <div><h1>Make forms worth filling out</h1></div>
+          <div>
+            <h2>Get more data—like signups, feedback, and anything else—with forms designed to be refreshingly different.</h2>
+          </div>
+          <div><button>Get started-its free</button></div>
+        </div>
+      </div>
+      <div class="rat1">
+        <div>Rated 4.5 out of 600+ reviews on G2.com and trusted by</div>
+        <div class="dan">
+          <div><img src="./imag/airbnb-logo.svg" /></div>
+          <div>
+            <img src="./imag/mailchimp-logo.svg" width="125px" height="35px" />
+          </div>
+          <div><img src="./imag/hermes-logo.svg" /></div>
+          <div><img src="./imag/hubspot-logo 3.svg" /></div>
+          <div><img src="./imag/barrys-logo.svg" /></div>
+        </div>
+      </div>
+      <div class="cantainer2">
+        <div>
+          <h1>Refreshingly different, by design</h1>
+        </div>
+        <div class="cantainer21">
+          <div>
+            <div>
+              <h1>Looks striking. Feels effortless.</h1>
+            </div>
+            <div>
+              <b> your form takers.</b> Catch their eye with striking visuals, and make form-filling feel effortless by replacing walls of questions
+              with just one at a time.
+            </div>
+            <div>
+              <a
+                href="https://www.typeform.com/signup/?_gl=1*1t5vhkz*_up*MQ..*_ga*MTEyNzE0MTg1MC4xNzIxMzgwMjU4*_ga_YBVHZJ5VPC*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA..*_ga_N6F0VDRT9W*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA.."
+                target="_blank"
+                ><button class="btn2">sin up</button></a
+              >
+            </div>
+          </div>
+          <div>
+            <video src="/vidseo/2.webm" controls loop muted autoplay width="500"></video>
+          </div>
+        </div>
+      </div>
+      <div class="cantainer3">
+        <div>
+          <video src="./vidseo/3.webm" controls muted loop autoplay width="600"></video>
+        </div>
+        <div class="cantainer31">
+          <div>
+            <h1>Embeds smoothly. Reveals more.</h1>
+          </div>
+          <div>
+            <h2>
+              Collect more and better data. Embed forms where people see them, from web to email. Ask the right follow-up question at the right time
+              to reveal deeper insights.
+            </h2>
+          </div>
+          <div>
+            <button class="btn2">signup</button>
+          </div>
+        </div>
+      </div>
+      <div class="cantainer4">
+        <div>
+          <div class="cant4"><h3>Works with your existing workflow</h3></div>
+          <div class="cant4">
+            <a
+              href="https://www.typeform.com/connect/?_gl=1*1wiel94*_up*MQ..*_ga*MTEyNzE0MTg1MC4xNzIxMzgwMjU4*_ga_YBVHZJ5VPC*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA..*_ga_N6F0VDRT9W*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA.."
+              target="_blank"
+              >Browse 120+ integrations</a
+            >
+          </div>
+        </div>
+        <di class="cantainer41">
+          <div>
+            <img class="aks3" src="./imag/zapier-logo.svg" />
+          </div>
+          <div>
+            <img class="aks2" src="./imag/calendly-logo.svg" />
+          </div>
+          <div>
+            <img class="aks1" src="./imag/2.svg" />
+          </div>
+        </di>
+      </div>
+      <div class="cantainer5">
+        <div><h2>Do it all with a form</h2></div>
+        <div>Whatever your goal, start with a ready-made template.</div>
+      </div>
+
+      <div class="cantainer6">
+        <div class="list1">
+          <ul class="list2title">
+            Marketing
+            <li>
+              <a
+                class="llink"
+                href="https://www.typeform.com/templates/t/lead-generation/?_gl=1*1a3xukg*_up*MQ..*_ga*MTEyNzE0MTg1MC4xNzIxMzgwMjU4*_ga_YBVHZJ5VPC*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA..*_ga_N6F0VDRT9W*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA.."
+                target="_blank"
+                >signup</a
+              >
+            </li>
+            <li>
+              <a
+                class="llink"
+                href="https://www.typeform.com/templates/t/branding-questionnaire/?_gl=1*13xu2y5*_up*MQ..*_ga*MTEyNzE0MTg1MC4xNzIxMzgwMjU4*_ga_YBVHZJ5VPC*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA..*_ga_N6F0VDRT9W*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA.."
+                target="_blank"
+                >branding</a
+              >
+            </li>
+            <li>
+              <a
+                class="llink"
+                href="https://www.typeform.com/templates/t/customer-feedback/?_gl=1*3jdhe4*_up*MQ..*_ga*MTEyNzE0MTg1MC4xNzIxMzgwMjU4*_ga_YBVHZJ5VPC*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA..*_ga_N6F0VDRT9W*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA.."
+                target="_blank"
+                >customer feedback</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="list2">
+          <ul class="list2title">
+            Customer success
+            <li>
+              <a
+                class="llink"
+                href="https://www.typeform.com/templates/t/faq/?_gl=1*1l216qp*_up*MQ..*_ga*MTEyNzE0MTg1MC4xNzIxMzgwMjU4*_ga_YBVHZJ5VPC*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA..*_ga_N6F0VDRT9W*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA.."
+                target="_blank"
+              >
+                FAQ builder</a
+              >
+            </li>
+            <li>
+              <a
+                class="llink"
+                href="https://www.typeform.com/templates/t/nps-survey-template/?_gl=1*1ezoes6*_up*MQ..*_ga*MTEyNzE0MTg1MC4xNzIxMzgwMjU4*_ga_YBVHZJ5VPC*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA..*_ga_N6F0VDRT9W*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA.."
+                target="_blank"
+              >
+                net promotor sucore
+              </a>
+            </li>
+            <li>
+              <a
+                class="llink"
+                href="https://www.typeform.com/templates/t/customer-satisfaction/?_gl=1*17v8ofv*_up*MQ..*_ga*MTEyNzE0MTg1MC4xNzIxMzgwMjU4*_ga_YBVHZJ5VPC*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA..*_ga_N6F0VDRT9W*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA.."
+                target="_blank"
+                >customer saticfication</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="list3">
+          <ul class="list2title">
+            Product
+            <li>
+              <a
+                class="llink"
+                href="https://www.typeform.com/templates/t/beta-product-feedback-survey-template/?_gl=1*1xowamv*_up*MQ..*_ga*MTEyNzE0MTg1MC4xNzIxMzgwMjU4*_ga_YBVHZJ5VPC*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA..*_ga_N6F0VDRT9W*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA.."
+                target="_blank"
+              >
+                beta testing</a
+              >
+            </li>
+            <li>
+              <a
+                class="llink"
+                href="https://www.typeform.com/templates/t/product-research-survey-template/?_gl=1*1wg7lf3*_up*MQ..*_ga*MTEyNzE0MTg1MC4xNzIxMzgwMjU4*_ga_YBVHZJ5VPC*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA..*_ga_N6F0VDRT9W*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA.."
+                target="_blank"
+                >product research</a
+              >
+            </li>
+            <li>
+              <a
+                class="llink"
+                href="https://www.typeform.com/templates/t/product-feedback/?_gl=1*838za2*_up*MQ..*_ga*MTEyNzE0MTg1MC4xNzIxMzgwMjU4*_ga_YBVHZJ5VPC*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA..*_ga_N6F0VDRT9W*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA.."
+                target="_blank"
+                >product feadback</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="list4">
+          <ul class="list2title">
+            HR
+            <li>
+              <a
+                class="llink"
+                href="https://www.typeform.com/templates/t/employee-job-application/?_gl=1*1ygcbmf*_up*MQ..*_ga*MTEyNzE0MTg1MC4xNzIxMzgwMjU4*_ga_YBVHZJ5VPC*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA..*_ga_N6F0VDRT9W*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA.."
+                target="_blank"
+                >Jab application</a
+              >
+            </li>
+            <li>
+              <a
+                class="llink"
+                href="https://www.typeform.com/templates/t/360-degree-feedback/?_gl=1*clafxo*_up*MQ..*_ga*MTEyNzE0MTg1MC4xNzIxMzgwMjU4*_ga_YBVHZJ5VPC*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA..*_ga_N6F0VDRT9W*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA.."
+                target="_blank"
+                >360 deegre feedback</a
+              >
+            </li>
+            <li>
+              <a
+                class="llink"
+                href="https://www.typeform.com/templates/t/employee-engagement/?_gl=1*1cd9zwt*_up*MQ..*_ga*MTEyNzE0MTg1MC4xNzIxMzgwMjU4*_ga_YBVHZJ5VPC*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA..*_ga_N6F0VDRT9W*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA.."
+                target="_blank"
+                >Employ engegment</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="list5">
+          <ul class="list2title">
+            Creators
+            <li>
+              <a
+                class="llink"
+                href="https://www.typeform.com/templates/t/online-contact-us/?_gl=1*p51083*_up*MQ..*_ga*MTEyNzE0MTg1MC4xNzIxMzgwMjU4*_ga_YBVHZJ5VPC*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA..*_ga_N6F0VDRT9W*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA.."
+                target="_blank"
+                >cantect detaills</a
+              >
+            </li>
+            <li>
+              <a
+                class="llink"
+                href="https://www.typeform.com/templates/t/customer-feedback/?_gl=1*crl1kc*_up*MQ..*_ga*MTEyNzE0MTg1MC4xNzIxMzgwMjU4*_ga_YBVHZJ5VPC*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA..*_ga_N6F0VDRT9W*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA.."
+                target="_blank"
+                >Customer feedback</a
+              >
+            </li>
+            <li>
+              <a
+                class="llink"
+                href="https://www.typeform.com/templates/t/personalized-product-recommendation-quiz-template/?_gl=1*1nquri2*_up*MQ..*_ga*MTEyNzE0MTg1MC4xNzIxMzgwMjU4*_ga_YBVHZJ5VPC*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA..*_ga_N6F0VDRT9W*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA.."
+                target="_blank"
+                >product recamendation</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="list6">
+          <ul class="list2title">
+            General business
+            <li>
+              <a
+                class="llink"
+                href="https://www.typeform.com/templates/t/referral-form-template/?_gl=1*1ymgfdj*_up*MQ..*_ga*MTEyNzE0MTg1MC4xNzIxMzgwMjU4*_ga_YBVHZJ5VPC*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA..*_ga_N6F0VDRT9W*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA.."
+                target="_blank"
+                >referal</a
+              >
+            </li>
+            <li>
+              <a
+                class="llink"
+                href="https://www.typeform.com/templates/t/simple-registration/?_gl=1*yvuinq*_up*MQ..*_ga*MTEyNzE0MTg1MC4xNzIxMzgwMjU4*_ga_YBVHZJ5VPC*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA..*_ga_N6F0VDRT9W*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA.."
+                target="_blank"
+                >Registrotion</a
+              >
+            </li>
+            <li>
+              <a
+                class="llink"
+                href="https://www.typeform.com/templates/t/client-onboarding-form-template/?_gl=1*10vqu74*_up*MQ..*_ga*MTEyNzE0MTg1MC4xNzIxMzgwMjU4*_ga_YBVHZJ5VPC*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA..*_ga_N6F0VDRT9W*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA.."
+                target="_blank"
+              >
+                Clilent onborder
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="cantainer7">
+        <h2>
+          <a
+            class="onvan"
+            href="https://www.typeform.com/templates/?_gl=1*oc2kq*_up*MQ..*_ga*MTEyNzE0MTg1MC4xNzIxMzgwMjU4*_ga_YBVHZJ5VPC*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA..*_ga_N6F0VDRT9W*MTcyMTM4MDI1Ny4xLjAuMTcyMTM4MDI1Ny4wLjAuMA.."
+            target="_blank"
+          >
+            Browse all tamplate</a
+          >
+        </h2>
+      </div>
+      <div class="cantainer8">
+        <div>
+          <h2>Why Typeform?</h2>
+        </div>
+        <div>
+          <p>Because after switching to us...</p>
+        </div>
+      </div>
+      <div class="cantainer9" width="1100">
+        <div>
+          <h1>96%</h1>
+        </div>
+        <div>
+          <h1>95%</h1>
+        </div>
+        <div>
+          <h1>97%</h1>
+        </div>
+      </div>
+      <div class="darsad">
+        <div class="darsad1">
+          <h3>of customers say they have a better brand experience</h3>
+        </div>
+        <div class="darsad2">
+          <h3>of customers say they gather more data, more easily</h3>
+        </div>
+        <div class="darsad3">
+          <h3>of customers say they reveal deeper insights from data</h3>
+        </div>
+      </div>
+      <div class="cantainer91">
+        <div>
+          <h2>Break the norm of forms</h2>
+        </div>
+        <div class="textp">Our Free Plan lets you: Create unlimited forms Access 3,000+ templates Start getting responses</div>
+        <div class="linkp">
+          <a id="payin" href="" target="_blank">signup</a>
+          <a id="payin" href="" target="_blank">compare plans</a>
+        </div>
+      </div>
+    </div>
+    <div class="cantainerb">
+      <div class="sutun">Product Pricing Enterprise</div>
+      <div class="sutun">Templates Popular templates Recent templates Popular categories Recent categories</div>
+      <div class="sutun">Integrations Popular integration apps More integration apps Popular app categories More app categories</div>
+      <div class="sutun">Resources Blog Help center Community Tutorials FAQs Why Typeform Referral program</div>
+      <div class="sutun">Get to know us About us Brand Careers Contact sales News Terms & conditions Typeform (es)</div>
+    </div>
+  </body>
+</html>

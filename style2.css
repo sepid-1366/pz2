@@ -1,0 +1,250 @@
+@font-face {
+  font-family: apercu-pro;
+  src: url(font/apercu_bold_italic_pro.otf);
+  font-style: italic;
+  font-weight: bold;
+}
+@font-face {
+  font-family: apercu-pro;
+  src: url(font/apercu_bold_pro.otf);
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: apercu-pro;
+  src: url(font/apercu_medium_italic_pro.otf);
+  font-style: italic;
+  font-weight: 500;
+}
+@font-face {
+  font-family: apercu-pro;
+  src: url(font/apercu_medium_pro.otf);
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: apercu-pro;
+  src: url(font/apercu_regular_italic_pro.otf);
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family: apercu-pro;
+  src: url(font/apercu_regular_pro.otf);
+  font-style: normal;
+  font-weight: 400;
+}
+html{
+  font-family: apercu-pro;
+}
+nav{
+    position: sticky;
+    background-color: white;
+    height: 80px;
+    margin: auto;
+    justify-content: center;
+    top:0
+    
+    
+    
+    
+    
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: auto;
+    max-width: 1535px;
+    
+}
+.nav-main-first{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 15px;
+}
+.nav-main-first a{
+    display: flex;
+    align-items: center;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.make {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 1535px;
+    padding: 60px;
+    gap: 20px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .sign{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+  }
+  .nav-right{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  .log{
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+  }
+  .kil{
+    background-color: black;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+  }
+  .vid1{
+    width: 100%;
+
+  }
+  .mak1{
+    font-family:apercu-pro ;
+    font-size: 80px;
+    font-weight: normal;
+  }
+  .get{
+    font-family: apercu-pro;
+    font-size: 24px;
+    padding-bottom: 100px;
+    font-weight: 400;
+  } 
+  .get1{
+    padding-bottom: 30px;
+  }
+  .make{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .content{
+    width: 90%;
+  }
+  .ref{
+    font-size: 64px;
+    text-align: center;
+    padding-bottom: 50px;
+    display: block;
+  }
+  .by{
+    position: relative;
+    
+  }
+  .looks{
+    font-family:apercu-pro ;
+    font-size: 48px;
+    font-weight: normal;
+  }
+  .your{
+    padding-bottom: 50px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .embed{
+    padding-bottom: 30px;
+    font-size: 48px;
+    font-weight: normal;
+  }
+  .coleect{
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .do{
+    font-size: 64px;
+    font-weight:normal ;
+    padding-bottom: 30px;
+  } 
+  .what{
+    font-size: 24px;
+        font-weight: 400;
+        line-height: 133%;
+  }
+  .mar{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.2;
+    padding-bottom: 20px;
+}
+#onvan{
+  text-decoration-line:underline ;
+  padding-bottom: 200px;
+}
+.why{
+  font-size: 64px;
+  font-weight: normal;
+  padding-bottom: 30px;
+}
+.bec{
+  font-size: 24px;
+        font-weight: 400;
+        line-height: 133%;
+        padding-bottom: 100px;
+}
+.adad{
+  font-size: 80px;
+        font-weight: 400;
+}
+.darsad{
+  font-size: 24px;
+  font-weight: 400;
+}
+.brek{
+  font-size: 64px;
+  text-align: center;
+  padding-top: 300px;
+  
+}
+.linkp{
+  gap: 25px;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 90px;
+
+}
+  
+  .menu{
+    display: none;
+  }
+  @media screen and (min-width:768px) and (max-width:1024px) {
+
+    .list{ width: 49%;}
+    
+  }
+  @media screen and (max-width:768px){
+    .list{ width: 100%;} 
+  }
+  @media screen and (max-width:768px) {
+    .nav-main-first , .nav-right{
+      display: none;
+    }
+    .menu{
+      display: block;
+    }
+  }
+  @media screen and (max-width:768px){
+    .make{
+      display: flex;
+      flex-direction: column;
+    }
+  }
